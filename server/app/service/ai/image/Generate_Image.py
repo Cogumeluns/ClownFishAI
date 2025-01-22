@@ -4,7 +4,7 @@ from typing import Optional
 from diffusers import DiffusionPipeline
 from app.service.ai.image.Export_Image import Export_Image
 
-def Generate_Image(model: DiffusionPipeline | None, 
+def Generate_Image(model, 
                          prompt: str,
                          num_inference_steps: int = 60,
                          guidance_scale: int = 10,
@@ -29,7 +29,7 @@ def Generate_Image(model: DiffusionPipeline | None,
         print(f"Error generating image: {e}")
         return None
     
-def Mocked_Image(model: DiffusionPipeline | None, 
+def Mocked_Image(model, 
                          prompt: str,
                          num_inference_steps: int = 60,
                          guidance_scale: int = 10,

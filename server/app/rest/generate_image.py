@@ -7,6 +7,7 @@ from app.service.ai.image import Generate_Image
 
 async def generate_image(request: BaseModel):
     try:
+        print(request)
         # Ensure the request contains valid text
         if not hasattr(request, "text"):
             raise HTTPException(status_code=400, detail="Invalid request. Missing 'text' field.")

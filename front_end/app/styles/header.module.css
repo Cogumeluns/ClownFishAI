@@ -1,0 +1,42 @@
+.header{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.description{
+    height: 80px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: #404040;
+    display: flex;
+    padding: 10px 28px;
+    font-size: 20px;
+    resize: none;
+    overflow: hidden;
+}
+
+.send{
+    background-color: #404040;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+.send:active{
+    opacity: 0.85;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);  /* Começa sem rotação */
+    }
+    100% {
+        transform: rotate(-360deg);  /* Gira 360 graus */
+    }
+}
+
+.load{
+    animation: spin 2s linear infinite;  /* Aplica a animação 'spin' por 2 segundos, de forma linear e infinita */
+}
