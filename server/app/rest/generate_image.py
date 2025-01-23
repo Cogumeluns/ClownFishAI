@@ -3,6 +3,7 @@ from fastapi.responses import StreamingResponse
 from io import BytesIO
 from pydantic import BaseModel
 from app.service.ai.image.Diffusion_AI import Get_Diffusion_AI
+from app.service.ai.image.Diffusion_API import Get_Diffusion_API
 from app.service.ai.image import Generate_Image
 
 async def generate_image(request: BaseModel):
@@ -19,6 +20,7 @@ async def generate_image(request: BaseModel):
 
         # Initialize the diffusion pipeline
         pipeline = Get_Diffusion_AI()
+        pipeline = Get_Diffusion_API()
         if not pipeline:
             raise HTTPException(status_code=500, detail="Failed to initialize diffusion model.")
 

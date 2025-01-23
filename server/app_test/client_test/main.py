@@ -22,7 +22,7 @@ else:
 '''
 
 url = "http://127.0.0.1:8000/generate-image"
-response = requests.post(url, json={"text": "Sunset"})
+response = requests.post(url, json={"text": "A astrounaut at space"})
 if response.status_code == 200:
     with open("output_image.png", "wb") as f:
         f.write(response.content)

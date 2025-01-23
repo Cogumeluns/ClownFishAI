@@ -1,5 +1,10 @@
 # ClownFishAI
-Demonstration of use of IA capacities in the context of CV and NLP to help Users to sketch yours own story imaginations
+Demonstration of use of IA capacities in the context of CV to sketch Arts.
+
+# Dependencies
+
+
+Image Generator: `stabilityai/stable-diffusion-2`
 
 # Run Server
 At `/server` folder, execute:
