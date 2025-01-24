@@ -1,13 +1,13 @@
-from diffusers import StableDiffusionPipeline
+from huggingface_hub import InferenceClient
 
 def Get_Diffusion_API():
     TOKEN = ""
     try:
-        pipeline =  StableDiffusionPipeline.from_pretrained(
+        api =  InferenceClient(
             "stabilityai/stable-diffusion-2",
-            use_auth_token=TOKEN
+            token=TOKEN
         )
-        return pipeline
+        return api
     except Exception as e:
         print(f"Error loading model: {e}")
         return None
