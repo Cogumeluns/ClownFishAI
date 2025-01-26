@@ -3,7 +3,7 @@ from diffusers import DiffusionPipeline
 
 def Get_Diffusion_AI() -> Optional[DiffusionPipeline]:
     
-    model_id = "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    model_id = "stabilityai/stable-diffusion-2"
     
     try:
         pipeline = DiffusionPipeline.from_pretrained(model_id)
