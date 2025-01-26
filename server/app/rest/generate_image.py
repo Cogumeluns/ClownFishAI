@@ -7,6 +7,8 @@ from app.service.ai.image.Diffusion_AI import Get_Diffusion_AI
 from app.service.ai.image.Diffusion_API import Get_Diffusion_API
 from app.service.ai.image import Generate_Image
 
+isApi=true
+
 async def generate_image(request: BaseModel):
     try:
         print(request)
@@ -20,13 +22,17 @@ async def generate_image(request: BaseModel):
             raise HTTPException(status_code=400, detail="Text prompt cannot be empty.")
 
         # Initialize the diffusion pipeline
-        pipeline = Get_Diffusion_AI()
-        #pipeline = Get_Diffusion_API()
+        pipeline = None
+        if isApi:
+            pipeline = Get_Diffusion_API()
+        else:
+            pipeline = Get_Diffusion_AI()
+        #
         if not pipeline:
             raise HTTPException(status_code=500, detail="Failed to initialize diffusion model.")
 
         # Generate the image using the provided text prompt
-        generated_image = Generate_Image.Generate_Image(model=pipeline, isAPI=False, prompt=text)
+        generated_image = Generate_Image.Generate_Image(model=pipeline, isAPI=isApi, prompt=text)
         if generated_image is None:
             raise HTTPException(status_code=500, detail="Image generation failed.")
 
