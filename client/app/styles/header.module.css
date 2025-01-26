@@ -20,7 +20,10 @@
 
 .send{
     background-color: #404040;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
     border-radius: 100%;
 }
 
@@ -39,4 +42,24 @@
 
 .load{
     animation: spin 2s linear infinite;  /* Aplica a animação 'spin' por 2 segundos, de forma linear e infinita */
+}
+
+@media (max-width: 430px) {
+    .header{
+        padding: 60px;
+        display: grid;
+        grid-template-columns: 225px;
+        gap: 20px;
+    }
+    .description{
+        width: auto;
+    }
+
+    .send{
+        background-color: #404040;
+        justify-self: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
 }

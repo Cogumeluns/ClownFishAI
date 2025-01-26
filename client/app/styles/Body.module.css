@@ -5,6 +5,7 @@
     column-gap: 90px;
     row-gap: 40px;
     padding: 10px;
+    min-height: 500px;
 }
 
 .container_img{
