@@ -15,6 +15,10 @@ Demonstration of use of IA capacities in the context of CV to sketch Arts.
 
 The goal of **Clownfish AI** is to experiment with the end-to-end development of an AI-driven application. By leveraging tools like **Stable Diffusion**, **FastAPI**, **Hugging Face**, and **PyTorch**, this project serves as a hands-on exploration of building and deploying AI systems.
 
+#### By: 
+- [George P.](https://github.com/GeorgePaulino)
+- [Otaviano M.](https://github.com/Otaviano-Manoel)
+
 ## How to Run
 
 ### Server
