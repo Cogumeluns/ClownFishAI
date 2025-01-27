@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.list_img{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 175px);
+    column-gap: 90px;
+    row-gap: 40px;
+    padding: 10px;
+    min-height: 500px;
+}
+
+.container_img{
+    position: relative;
+    height: 242px;
+}
+
+.image{
+     position: absolute;
+     width: inherit;
+     height: inherit;
+     border-radius: 8px;
+}
+.icons{
+    position: absolute;
+    bottom: 15;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 15px;
+    gap: 10px;
+}
+
+.copy,
+.download{
+    background-color: #6F4141;
+    padding: 5px 3px;
+    border-radius: 9px;
+}
+
+.copy:active, .download:active{
+    opacity: 0.85;
+}
