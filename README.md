@@ -27,7 +27,7 @@ The goal of **Clownfish AI** is to experiment with the end-to-end development of
 
 - Run Server (for default at port 8000): `uvicorn app.main:app --reload`
 
-- To Run With API, create a .env file at root of the project, and define the `HUGGING_TOKEN` equals the token of your Hugging Face account
+- To run with API, create a .env file at root of the server project, and define the `HUGGING_TOKEN` equals the token of your Hugging Face account
 
 ### Client
 
