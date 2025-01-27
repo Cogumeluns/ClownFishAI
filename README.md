@@ -1,10 +1,12 @@
 # ClownFishAI
 
+<img src="docs/clownfishai_banner.png" alt="Banner ClowFishAI" width="400"/>
+
 Demonstration of use of AI capacities in the context of CV to sketch Arts.
 
 <p>
-    <img src="docs/cogumeluns.png" alt="Hugging Face" width="50"/>
-    <img src="docs/clownfishai.png" alt="Hugging Face" width="50"/>
+    <img src="docs/cogumeluns.png" alt="Cogumeluns logo" width="50"/>
+    <img src="docs/clownfishai.png" alt="ClownFishAI logo" width="50"/>
 </p>
 
 
@@ -44,7 +46,7 @@ The goal of **Clownfish AI** is to experiment with the end-to-end development of
 - FastAPI
 <div align="center">
     <a href="https://fastapi.tiangolo.com/" target="_blank">
-        <img src="docs/dependencies/fastapi.png" alt="PyTorch" width="400"/>
+        <img src="docs/dependencies/fastapi.png" alt="FastAPI" width="400"/>
     </a>
 </div>
 
