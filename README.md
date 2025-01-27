@@ -2,8 +2,10 @@
 
 Demonstration of use of IA capacities in the context of CV to sketch Arts.
 
-<img src="docs/cogumeluns.png" alt="Hugging Face" width="50"/>
-<img src="docs/clownfishai.png" alt="Hugging Face" width="50"/>
+<p>
+    <img src="docs/cogumeluns.png" alt="Hugging Face" width="50"/>
+    <img src="docs/clownfishai.png" alt="Hugging Face" width="50"/>
+</p>
 
 
 
