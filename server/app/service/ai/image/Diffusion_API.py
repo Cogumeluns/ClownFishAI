@@ -1,11 +1,11 @@
 from huggingface_hub import InferenceClient
 
-def Get_Diffusion_API():
-    TOKEN = ""
+def Get_Diffusion_API(TOKEN: str):
     try:
         api =  InferenceClient(
             "stabilityai/stable-diffusion-2",
-            token=TOKEN
+            token=TOKEN,
+            timeout=300
         )
         return api
     except Exception as e:

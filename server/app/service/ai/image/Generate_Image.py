@@ -8,12 +8,12 @@ def Generate_Image(model,
                     prompt: str,
                     num_inference_steps: int = 180,
                     guidance_scale: int = 10,
-                    height: int = 768,
-                    width: int = 768,
+                    height: int = 716,
+                    width: int = 716,
                     seed: int = 2742008636) -> Optional[DiffusionPipeline]: # type: ignore
     
     try:
-        # seed = Generate_Seed()
+        seed = Generate_Seed()
         image = None
         
         if(isAPI):

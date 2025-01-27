@@ -1,9 +1,10 @@
 .about{
-    margin: 90px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 550px);
-    justify-content: center;
-    row-gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .card{
@@ -12,14 +13,16 @@
     border-radius: 25px;
     padding: 10px 15px;
 
+    flex: 1;
+    margin-right: 80px; 
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    background-color: black;
 }
 
 .card p{
-    font-size: 24px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
 }
@@ -48,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 54px;
+    gap: 60px;
 }
 
 .logos .img{
@@ -57,64 +60,25 @@
     height: 92px;
 }
 
-
-@media (max-width: 630px) {
-    .about{
-        grid-template-columns: repeat(auto-fit, 100%);
-    }
-    .card{
-        grid-template-rows: auto auto auto;
-        grid-template-columns: 1fr;
-    }
-
-    .projectname{
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
+@media (max-width: 1100px) {
+    .card p{
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
     }
     
-    .by{
-        grid-column: 1;
-        grid-row: 2;
-
-        display: grid;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .by span{
-        padding-left: 0px;
-    }
-
-    .group{
-        grid-column: 1;
-        grid-row: 3;
-        justify-content: center;
-        align-items: center;
+    .logos {
+        flex: 1;
     }
 }
 
-@media (max-width: 455px) {
-    .about{
-        grid-template-columns: repeat(auto-fit, 225px);
-        row-gap: 20px;
+
+@media (max-width: 850px) {
+    .card{
+        display: none;
     }
 
-    .card p{
-        font-size: 20px;
-    }
-
-    .logos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 27px;
-    }
-    
-    .logos .img{
-        border-radius: 100%;
-        width: 80px;
-        height: 80px;
+    .logos {
+        flex: 1;
     }
 }

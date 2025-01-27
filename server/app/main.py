@@ -9,10 +9,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://10.0.0.108:3000"],  # Substitua pelo domínio permitido
+    allow_origins=["http://localhost:3000", "http://10.0.0.108:3000", "http://192.168.1.7:3000", "http://127.0.0.1:3000"],
     allow_credentials=True,
-    allow_methods=["*"],  # Permite todos os métodos (GET, POST, etc.)
-    allow_headers=["*"],  # Permite todos os cabeçalhos
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.post("/generate-image")
@@ -26,5 +26,3 @@ async def end_get_image_infos():
 @app.post("/get-image")
 async def end_get_image(request: TextRequest):
     return await get_image(request)
-
-# To run this server, use: uvicorn <filename_without_py>:app --reload
