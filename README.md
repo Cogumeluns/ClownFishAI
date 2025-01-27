@@ -1,6 +1,6 @@
 # ClownFishAI
 
-Demonstration of use of IA capacities in the context of CV to sketch Arts.
+Demonstration of use of AI capacities in the context of CV to sketch Arts.
 
 <p>
     <img src="docs/cogumeluns.png" alt="Hugging Face" width="50"/>
