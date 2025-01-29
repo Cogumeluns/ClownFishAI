@@ -22,7 +22,7 @@ async def generate_image(request: BaseModel):
             raise HTTPException(status_code=400, detail="Text prompt cannot be empty.")
 
         # Initialize the diffusion pipeline
-        isApi = TOKEN != ''
+        isApi = TOKEN != None and TOKEN != ''
         pipeline = None
         if isApi:
             pipeline = Get_Diffusion_API(TOKEN)

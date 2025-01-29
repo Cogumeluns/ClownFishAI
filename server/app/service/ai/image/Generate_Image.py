@@ -8,8 +8,8 @@ def Generate_Image(model,
                     prompt: str,
                     num_inference_steps: int = 180,
                     guidance_scale: int = 10,
-                    height: int = 716,
-                    width: int = 716,
+                    height: int = 712,
+                    width: int = 712,
                     seed: int = 2742008636) -> Optional[DiffusionPipeline]: # type: ignore
     
     try:
